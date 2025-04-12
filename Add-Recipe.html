@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe Page</title>
+</head>
+<body>
+     <!-- Navigation Links -->
+  <nav>
+    <p>
+    <a href="index.html">Home</a> | 
+    <a href="Add-Recipe.html">Add Recipe</a>  |
+     <a href="Recipe-List.html">Recipe List</a> </p>
+ </nav>
+   <hr>
+   <h2>Submit Your Recipe</h2>
+   <form action="POST">
+    <label for="name">Recipe name:</label> <br> 
+    <input type="text" id="name" name="name" placeholder="e.g., Chocolate Cacke..." required> <hr>
+
+    <label for="ingredients">What ingredients did you need?</label> <br> <br>
+    <textarea id="ingredients" name="ingredients" placeholder="e.g., 2 cups of flours..." required></textarea> <hr>
+
+    <label for="instructions">Step by step, how how did you prepare it?</label> <br> <br>
+    <textarea id="instructions" name="instructions" placeholder="e.g., mix dry Ingredients..." required></textarea> <hr>
+
+    <label for="image">Link to an image that shows your dish (optional)</label>
+    <input type="file" id="image" name="image" placeholder="provide a link to an image of your dish (optional)"> <hr>
+ <hr>
+     <!-- Start Section -->
+     <section>
+        <label for="category">Recipe Category</label>
+        <select id="category" name="category" required>
+          <option value="">Choose...</option>
+          <option value="Desserts">Desserts</option>
+          <option value="Main Course">Main Course</option>
+          <option value="Appetizers">Appetizers</option>
+          <option value="Snacks">Snacks</option>
+          <option value="Drinks">Drinks</option>
+          <option value="Vegetarian">Vegetarian | Vegan</option>
+        </select>
+       </section>
+       <!-- End Section -->
+       <hr>
+       <button type="submit">Add to BOOKBOOKS</button>
+     </form>
+       </main>
+</body>
+</html>
